@@ -35,4 +35,4 @@ You can find the website that we scrapped for this project on the following link
 <br> 
 
 ## Conclusion : 
-<img src="https://github.com/thomastrg/Price_prediction_football_players/blob/main/rapport/Hnet-image.gif" width="600" height="370"/>
+<img src="https://github.com/thomastrg/Price_prediction_footballers/blob/main/rapport/Hnet-image.gif" width="600" height="370"/>
