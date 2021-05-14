@@ -1,0 +1,74 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Predict the market value of a player</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js">
+	</script>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css"
+	rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel = "icon" href =  "https://thumbs.dreamstime.com/b/football-player-transfer-icon-vector-illustration-football-player-transfer-icon-vector-illustration-187310130.jpg" type = "image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+  
+  
+  <style>
+  html{
+	  overflow: scroll;
+  
+  }
+   
+   
+  
+  </style>
+
+
+
+
+
+</head>
+<body>
+	<ul id = "ul_navbar">
+        <li><a class="active" href="{{ url_for('home') }}">Predict your market value</a></li>
+    </ul>
+
+
+
+	<div class="login">
+		
+	
+		<h1>Predict the market value of a footballer</h1>
+	<form action="{{ url_for('predict_search_player')}}" method="post">
+		<input type="text" name="Name" id="tags" placeholder="Name" required="required" />
+		<button type="submit" class="btn btn-primary btn-block btn-large">Launch the prediction of the selected player</button>
+	</form>
+	   <br>
+
+	   {{ prediction_text }}
+	 </div>
+</body>
+
+<script>
+    $( function() {
+        var availableTags = [
+            {% for name in names %}
+                "{{name}}",
+            {% endfor %}
+        ];
+        $( "#tags" ).autocomplete({
+        source: availableTags
+        });
+    } );
+</script>
+
+</html>
+

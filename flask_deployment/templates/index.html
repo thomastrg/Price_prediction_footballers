@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Predict your market value as a footballer</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel = "icon" href =  "https://thumbs.dreamstime.com/b/football-player-transfer-icon-vector-illustration-football-player-transfer-icon-vector-illustration-187310130.jpg" type = "image/x-icon">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+
+<style>
+html{
+    overflow: scroll;
+
+}
+ 
+ 
+
+</style>
+
+</head>
+
+<body>
+	<ul id = "ul_navbar">
+        <li><a class="active" href="{{ url_for('predict_search_player') }}">Predict the market value of a footballer</a></li>
+    </ul>
+
+ <div class="login">
+	<h1>Predict your market value as a footballer</h1>
+	
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Age" pattern="\d+" placeholder="Age" required="required" />
+    	<input type="text" name="Wage €" pattern="\d+" placeholder="Wage € per week (For example Mbappé : 160000 €/Week )" required="required" />
+        <input type="text" name="Ball Control" pattern="\d+" placeholder="Ball Control on 100 (For example Mbappé : 90) " required="required" />
+		<input type="text" name="Dribbling" pattern="\d+" placeholder="Dribbling on 100 (For example Mbappé : 92)" required="required" />
+		<input type="text" name="Marking" pattern="\d+" placeholder="Marking (For example Mbappé : 34)" required="required" />
+		<input type="text" name="Slide Tackle" pattern="\d+" placeholder="Slide Tackle (For example Mbappé : 32)" required="required" />
+		<input type="text" name="Stand Tackle " pattern="\d+" placeholder="Stand Tackle (For example Mbappé : 34) " required="required" />
+		<input type="text" name="Aggression" pattern="\d+" placeholder="Aggression (For example Mbappé : 62)" required="required" />
+		<input type="text" name="Reactions" pattern="\d+" placeholder="Reactions (For example Mbappé : 92)" required="required" />
+		<input type="text" name="Att. Positioning" pattern="\d+" placeholder="Att. Positioning (For example Mbappé : 91)" required="required" />
+		<input type="text" name="Interceptions" pattern="\d+" placeholder="Interceptions (For example Mbappé : 38)" required="required" />
+		<input type="text" name="Vision" pattern="\d+" placeholder="Vision (For example Mbappé : 80)" required="required" />
+		<input type="text" name="Self Control" pattern="\d+" placeholder="Self Control (For example Mbappé : 84)" required="required" />
+		<input type="text" name="Crossing" pattern="\d+" placeholder="Crossing (For example Mbappé : 78)" required="required" />
+		<input type="text" name="Short Pass" pattern="\d+" placeholder="Short Pass (For example Mbappé : 83)" required="required" />
+		<input type="text" name="Long pass" pattern="\d+" placeholder="Long pass (For example Mbappé : 70)" required="required" />
+		<input type="text" name="Acceleration" pattern="\d+" placeholder="Acceleration (For example Mbappé : 96)" required="required" />
+		<input type="text" name="Endurance" pattern="\d+" placeholder="Endurance (For example Mbappé : 86)" required="required" />
+		<input type="text" name="Strength" pattern="\d+" placeholder="Strength (For example Mbappé : 76)" required="required" />
+		<input type="text" name="Balance (équilibre)" pattern="\d+" placeholder="Balance (équilibre) (For example Mbappé : 82)" required="required" />
+		<input type="text" name="Sprint Speed" pattern="\d+" placeholder="Sprint Speed (For example Mbappé : 96)" required="required" />
+		<input type="text" name="Agility" pattern="\d+" placeholder="Agility (For example Mbappé : 92)" required="required" />
+		<input type="text" name="Jumping" pattern="\d+" placeholder="Jumping (For example Mbappé : 77)" required="required" />
+		<input type="text" name="Heading" pattern="\d+" placeholder="Heading (For example Mbappé : 73)" required="required" />
+		<input type="text" name="Shot Power" pattern="\d+" placeholder="Shot Power (For example Mbappé : 86)" required="required" />
+		<input type="text" name="Finishing" pattern="\d+" placeholder="Finishing (For example Mbappé : 91)" required="required" />
+		<input type="text" name="Long Shots" pattern="\d+" placeholder="Long Shots (For example Mbappé : 79)" required="required" />
+		<input type="text" name="Curve" pattern="\d+" placeholder="Curve (For example Mbappé : 79)" required="required" />
+		<input type="text" name="FreeKick Acc." pattern="\d+" placeholder="FreeKick Acc. (For example Mbappé : 63)" required="required" />
+		<input type="text" name="Penalties" pattern="\d+" placeholder="Penalties (For example Mbappé : 80)" required="required" />
+		<input type="text" name="Volleys" pattern="\d+" placeholder="Volleys (For example Mbappé : 83)" required="required" />
+		<input type="text" name="GK Positioning" pattern="\d+" placeholder="GK Positioning (For example Mbappé : 11)" required="required" />
+		<input type="text" name="GK Diving" pattern="\d+" placeholder="GK Diving (For example Mbappé : 13)" required="required" />
+		<input type="text" name="GK Handling" pattern="\d+" placeholder="GK Handling (For example Mbappé : 5)" required="required" />
+		<input type="text" name="GK Kicking " pattern="\d+" placeholder="GK Kicking (For example Mbappé : 7)" required="required" />
+		<input type="text" name="GK Reflexes" pattern="\d+" placeholder="GK Reflexes (For example Mbappé : 6)" required="required" />
+		
+        <button type="submit" class="btn btn-primary btn-block btn-large">Launch the prediction</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+
+
+</html>
