@@ -14,7 +14,7 @@ Both experts and fans estimates have repeatedly been shown to be highly accurate
 
 **Are the personal skills of a player enough to give a good prediction of his market value ?**
 
-Nowadays we think that some players might be over evaluated that's why we implemented an application in order to predict any footballer's price only by entering his name. The application will also predict your own market value according to your abilities.
+Nowadays we think that some players might be over evaluated that's why **we implemented an application** in order to predict any footballer's price only by entering his name. The application will also predict your own market value according to your abilities.
 
 You can find the website that we scrapped for this project on the following link : [https://www.fifaindex.com/fr/players/](https://www.fifaindex.com/fr/players/)
 <br>
