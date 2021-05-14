@@ -12,7 +12,7 @@ Football is no longer just a sport, but also a major business. Player transfers 
 Both experts and fans estimates have repeatedly been shown to be highly accurate, but the estimation process is usually extremely complex. Market values are therefore often only updated once or twice a year. Our goal through this project is to implement a conjecturing model in order to predict the market value of a player according to his personal football skills and attributes. 
 
 
-**Are the personal skills of a player enough to give a good prediction of his market value ?**
+*Are the personal skills of a player enough to give a good prediction of his market value ?*
 
 Nowadays we think that some players might be over evaluated that's why **we implemented an application in order to predict any footballer's price only by entering his name**. The application will also predict your own market value according to your abilities.
 
