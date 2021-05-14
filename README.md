@@ -29,9 +29,9 @@ You can find the website that we scrapped for this project on the following link
 
 ## You will find in this repositery : 
 * A [LaTeX report of the study]()
-* The [Scrapping notebook]()
+* The [Scrapping function]()
 * The [Data exploration processing and modeling Notebook]()
-* The Website deployed with Flask 
+* The Flask app deployed with Heroku 
 <br> 
 
 ## Conclusion : 
