@@ -1,6 +1,6 @@
 # Footballers price prediction
 
-## Deployed solution 
+## Solution 
 We are proud to present you the website hosting our application : [http://footballerprediction.herokuapp.com/players](http://footballerprediction.herokuapp.com/players)
 
 ## Collaboration 
