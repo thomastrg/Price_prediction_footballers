@@ -1,5 +1,7 @@
 # Footballers price prediction
 
+## Deployed solution 
+We are proud to present you the website hosting our application [http://footballerprediction.herokuapp.com/players](http://footballerprediction.herokuapp.com/players)
 
 ## Collaboration 
 Hello, my friend [Ikhlass](https://github.com/ikhlo) and I are proud to introduce you the Machine Learning project that we made, about **predicting the price of football players**
@@ -35,4 +37,5 @@ You can find the website that we scrapped for this project on the following link
 <br> 
 
 ## Conclusion : 
+Overview of the website :  <br> <br>
 <img src="https://github.com/thomastrg/Price_prediction_footballers/blob/main/rapport/Hnet-image.gif" width="600" height="370"/>
