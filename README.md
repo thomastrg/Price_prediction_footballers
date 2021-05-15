@@ -1,7 +1,7 @@
 # Footballers price prediction
 
 ## Deployed solution 
-We are proud to present you the website hosting our application [http://footballerprediction.herokuapp.com/players](http://footballerprediction.herokuapp.com/players)
+We are proud to present you the website hosting our application : [http://footballerprediction.herokuapp.com/players](http://footballerprediction.herokuapp.com/players)
 
 ## Collaboration 
 Hello, my friend [Ikhlass](https://github.com/ikhlo) and I are proud to introduce you the Machine Learning project that we made, about **predicting the price of football players**
