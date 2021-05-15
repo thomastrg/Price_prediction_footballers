@@ -32,7 +32,7 @@ You can find the website that we scrapped for this project on the following link
 ## You will find in this repositery : 
 * A [LaTeX report of the study](https://github.com/thomastrg/Price_prediction_footballers/blob/main/rapport/Player_Value_Prediction.pdf)
 * The [Scrapping function](https://github.com/thomastrg/Price_prediction_footballers/blob/main/Scrapping/Scrapping_fifaindex_function.py)
-* The [Data exploration processing and modeling Notebook](https://github.com/thomastrg/Price_prediction_footballers/blob/main/Modeling/EDA_And_ML_modeling.ipynb)
+* The [Data exploration processing and modeling Notebook](https://github.com/thomastrg/Price_prediction_footballers/tree/main/Modeling)
 * The [Flask application deployed with Heroku](http://footballerprediction.herokuapp.com/players)
 <br> 
 
